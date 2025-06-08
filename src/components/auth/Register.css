@@ -1,0 +1,224 @@
+/* Container and layout */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+  }
+  
+  .login-wrapper {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form section */
+  .login-form {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .login-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Register override (if needed) */
+  .register-form {
+    background-color: #fff;
+  }
+  
+  .register-title {
+    margin-bottom: 1rem;
+  }
+  
+  /* Form inputs */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .label {
+    display: block;
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    background-color: #f8f9fa;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Password toggle */
+  .password-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .password-toggle-btn {
+    position: absolute;
+    right: 0.75rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: #6c757d;
+  }
+  
+  /* Password strength */
+  .password-strength {
+    margin-top: 0.5rem;
+  }
+  
+  .strength-bars {
+    display: flex;
+    gap: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .strength-bar {
+    width: 25%;
+    height: 0.25rem;
+    background-color: #e9ecef;
+  }
+  
+  .strength-1 .strength-bar:nth-child(-n+1) {
+    background-color: #dc3545;
+  }
+  
+  .strength-2 .strength-bar:nth-child(-n+2) {
+    background-color: #ffc107;
+  }
+  
+  .strength-3 .strength-bar:nth-child(-n+3) {
+    background-color: #28a745;
+  }
+  
+  .strength-4 .strength-bar:nth-child(-n+4) {
+    background-color: #28a745;
+  }
+  
+  .strength-text {
+    font-size: 0.75rem;
+    color: #6c757d;
+  }
+  
+  .strength-1 .strength-text { color: #dc3545; }
+  .strength-2 .strength-text { color: #ffc107; }
+  .strength-3 .strength-text { color: #28a745; }
+  .strength-4 .strength-text { color: #28a745; }
+  
+  /* Checkbox */
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #6c757d;
+  }
+  
+  .checkbox {
+    margin-right: 0.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+  
+  .checkbox:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .checkbox-text {
+    margin-left: 0.25rem;
+  }
+  
+  .policy-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .policy-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Submit button */
+  .submit-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Navigation links */
+  .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .link {
+    font-size: 0.875rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  /* Right image section */
+  .image-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dee2e6;
+  }
+  
+  .gym-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Error message */
+  .error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }

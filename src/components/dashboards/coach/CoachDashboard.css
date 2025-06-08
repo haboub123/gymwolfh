@@ -1,0 +1,154 @@
+/* Conteneur principal */
+.dashboard-container {
+  padding: 1.5rem;
+  background-color: #f4f7fa;
+  min-height: 100vh;
+  padding-left: 64px; /* Ajustement pour éviter le chevauchement avec la Sidebar */
+}
+
+/* En-tête du tableau de bord */
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-header h2 {
+  color: #28a745;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-header h2 i {
+  margin-right: 0.5rem;
+}
+
+.dashboard-header p {
+  color: #6c757d;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Grille pour les cartes de séances */
+.seances-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Carte de chaque séance */
+.seance-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.seance-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.seance-card-header {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.seance-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #212529;
+  margin: 0;
+}
+
+.seance-date {
+  font-size: 0.9rem;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+}
+
+.seance-date i {
+  margin-right: 0.3rem;
+}
+
+.seance-details p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #495057;
+  display: flex;
+  align-items: center;
+}
+
+.seance-details i {
+  margin-right: 0.3rem;
+  color: #28a745;
+}
+
+/* Message d'absence de séances */
+.no-seances {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.no-seances p {
+  color: #6c757d;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-seances i {
+  margin-right: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 1rem;
+    padding-left: 1rem; /* Réduit l'espace gauche sur mobile */
+  }
+
+  .dashboard-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .seances-grid {
+    grid-template-columns: 1fr; /* Une carte par ligne sur mobile */
+  }
+
+  .seance-card {
+    padding: 0.75rem;
+  }
+
+  .seance-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .seance-details p {
+    font-size: 0.85rem;
+  }
+
+  .no-seances {
+    padding: 1rem;
+  }
+}

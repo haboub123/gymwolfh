@@ -1,0 +1,17 @@
+.dashboard-container {
+    padding: 2rem;
+    background-color: #dee2e6;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    color: #6c757d;
+    font-size: 1rem;
+  }

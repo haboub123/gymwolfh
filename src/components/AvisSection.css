@@ -1,0 +1,12 @@
+.avis-section {
+  background-color: #fff;
+}
+
+.avis-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.avis-card:hover {
+  border-color: #3b82f6 !important; /* Bleu Tailwind 500 pour harmonie */
+}
